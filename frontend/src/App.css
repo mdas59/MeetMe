@@ -1,0 +1,57 @@
+/* App.css */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+.scenic-bg {
+  background: url('../hero.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  max-height: auto;
+
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button {
+  border-radius: 66%;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero-phone-img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

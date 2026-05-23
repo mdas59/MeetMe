@@ -1,0 +1,123 @@
+/* join call */
+.connectBtn {
+    margin-left: 20px;
+}
+
+/* user reference video */
+.lobbyVideo {
+    width: min(560px, 90vw);
+    aspect-ratio: 16 / 9;
+    margin: 1rem auto 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #111;
+}
+
+.lobbyVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* meeting room */
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background: rgb(1, 4, 48);
+}
+
+/* meeting room user frame */
+.meetUserVideo {
+    position: absolute;
+    bottom: 7vh;
+    left: 1.5rem;
+    width: 330px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+    background: #111;
+    z-index: 5;
+}
+
+/* setting buttons */
+.buttonContainers {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+}
+
+.buttonContainers svg {
+    font-size: 2.2rem;
+}
+
+/* connections media frames */
+.conferenceView {
+    padding: 10px;
+    min-height: 100vh;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-content: center;
+    padding-bottom: 6rem;
+}
+
+.conferenceView>div {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #111;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.conferenceView video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+
+
+}
+
+/* chat window */
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+}
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 30vw;
+    padding-inline: 20px;
+}
+
+.chattingArea {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+
+}
+
+@media (max-width: 768px) {
+    .conferenceView {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .meetUserVideo {
+        width: 140px;
+        bottom: 9vh;
+    }
+
+    .chatRoom {
+        width: 100vw;
+    }
+}
